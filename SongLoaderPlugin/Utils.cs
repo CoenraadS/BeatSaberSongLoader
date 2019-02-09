@@ -7,7 +7,7 @@ namespace SongLoaderPlugin
 {
 	public static class Utils
 	{
-		public static TEnum ToEnum<TEnum>(this string strEnumValue, TEnum defaultValue)
+		public static TEnum ToEnum<TEnum>(string strEnumValue, TEnum defaultValue)
 		{
 			if (!Enum.IsDefined(typeof(TEnum), strEnumValue))
 				return defaultValue;
